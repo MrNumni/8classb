@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Логин</title>
+    <link rel="shortcut icon" href="pictures\md.png" type="image/png">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center; /* Центрируем по горизонтали */
+            align-items: center; /* Центрируем по вертикали */
+            height: 100vh; /* Занимаем всю высоту видимой области */
+            margin: 0;
+        }
+
+        .container {
+            text-align: center;
+            width: 300px; /* Ширина контейнера */
+        }
+
+        h2 {
+            margin-bottom: 20px; /* Отступ снизу для заголовка */
+        }
+
+        input[type="text"],
+        input[type="password"],
+        button {
+            display: block;
+            width: 100%; /* Ширина инпутов и кнопки */
+            margin-bottom: 10px; /* Отступ снизу между элементами */
+        }
+
+        button {
+            background-color: #3b3b3b; /* Цвет фона кнопки */
+            color: #fff; /* Цвет текста кнопки */
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #000000; /* Цвет фона кнопки при наведении */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Логин</h2>
+        <form id="loginForm" action="login.php" method="post">
+            <input type="text" name="username" placeholder="Username" required><br>
+            <input type="password" name="password" placeholder="Password" required><br>
+            <button type="submit">Войти</button>
+        </form>
+    </div>
+</body>
+</html>
